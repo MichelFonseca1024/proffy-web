@@ -21,37 +21,41 @@ function Landing() {
 
   return (
     <div id="page-landing">
-      <div id="page-landing-content" className="container">
-        <div className="logo-container">
-          <img src={logoImg} alt="Proffy" />
-          <h2>Sua Plataforma de estudos online.</h2>
-        </div>
-
-        <img
-          src={landingImg}
-          alt="Plataforma de estudos"
-          className="hero-image"
-        />
-
-        <div className="options">
-
-
-          <div className="buttons-container">
-            <Link to="/study" className="study">
-              <img src={studyIcon} alt="Estudar" />
-              Estudar
-            </Link>
-            <Link to="/give-classes" className="give-classes">
-              <img src={giveClassesIcon} alt="Dar Aulas" />
-              Dar Aulas
-            </Link>
+      <div id="page-landing-baner">
+        <div id="page-landing-content" className="container">
+          <div className="logo-container">
+            <img src={logoImg} alt="Proffy" />
+            <h2>Sua Plataforma de estudos online.</h2>
           </div>
 
-          <span className="total-connections">
-            Total de {totalConnnections} conexões ja realizadas
-            <img src={purpleHeartIcon} alt="Coração roxo" />
-          </span>
+          <img
+            src={landingImg}
+            alt="Plataforma de estudos"
+            className="hero-image"
+          />
         </div>
+      </div>
+
+      <div id="page-landing-options" className="container">
+        <span className="welcome">
+          Sejam bem vindo. <br />
+          <strong>O que deseja fazer?</strong>
+        </span>
+        <div className="buttons-container">
+          <Link to="/study" className="study">
+            <img src={studyIcon} alt="Estudar" />
+            Estudar
+          </Link>
+          <Link to="/give-classes" className="give-classes">
+            <img src={giveClassesIcon} alt="Dar Aulas" />
+            Dar Aulas
+          </Link>
+        </div>
+
+        <span className="total-connections">
+          Total de {totalConnnections} conexões ja realizadas
+          <img src={purpleHeartIcon} alt="Coração roxo" />
+        </span>
       </div>
     </div>
   );
